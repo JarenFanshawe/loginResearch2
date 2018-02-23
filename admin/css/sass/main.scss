@@ -166,8 +166,6 @@ a:hover {
 	}
 
 	#submitButton {
-		//width: 150px;
-		//height: 40px;
 		padding: 10px 40px 10px 40px;
 		background-color: $yellow;
 		font-family: $fontHeader;
@@ -189,15 +187,50 @@ a:hover {
 /*Index Page*/
 
 
+#adminTitle {
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+#adminNav {
+	padding-left: 25px;
+	margin-top: 20px;
+	list-style-type: none;
+}
 
 
+/*Create User Page*/
+
+
+#createCon {
+	padding: 0 7% 0 7%;
+
+	label {
+		color: $graydark;
+		margin-top: 30px;
+	}
+
+	#submitButton {
+		margin-top: 20px;
+		padding: 10px 40px 10px 40px;
+		background-color: $yellow;
+		font-family: $fontHeader;
+		font-size: 1em;
+		color: $white;
+	}
+
+	#submitButton:hover {
+		background-color: $orange;
+		cursor: pointer;
+	}
+
+	input {
+		border-radius: 100px;
+	}
+}
 
 
 @media screen and (min-width: 640px) {
 
-	#loginCon {
-		padding-left: 30%;
-		padding-right: 30%;
-	}
 
 }

@@ -101,9 +101,32 @@ a:hover {
     border-radius: 100px; }
 
 /*Index Page*/
-@media screen and (min-width: 640px) {
-  #loginCon {
-    padding-left: 30%;
-    padding-right: 30%; } }
+#adminTitle {
+  margin-top: 40px;
+  margin-left: 40px; }
+
+#adminNav {
+  padding-left: 25px;
+  margin-top: 20px;
+  list-style-type: none; }
+
+/*Create User Page*/
+#createCon {
+  padding: 0 7% 0 7%; }
+  #createCon label {
+    color: #5D5D77;
+    margin-top: 30px; }
+  #createCon #submitButton {
+    margin-top: 20px;
+    padding: 10px 40px 10px 40px;
+    background-color: #F7BF18;
+    font-family: "Muli", sans-serif;
+    font-size: 1em;
+    color: #FFF; }
+  #createCon #submitButton:hover {
+    background-color: #F69C1D;
+    cursor: pointer; }
+  #createCon input {
+    border-radius: 100px; }
 
 /*# sourceMappingURL=main.css.map */
