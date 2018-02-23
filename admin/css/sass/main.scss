@@ -79,10 +79,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7bf18', end
 /*Overall Selectors*/
 
 
-#loginBody {
-	@include gradX();
-}
-
 body {
   	background-color: $white;
 	color: $black;
@@ -101,7 +97,6 @@ body {
 }
 
 h2 {
-  	color: $white;
  	font-size: 1.8em;
 }
 
@@ -150,65 +145,43 @@ a:hover {
 
 /*Login Page*/
 
-#loginCon {
-	padding: 80px 40px 0 40px;
+
+#welcomeBanner {
+	margin-top: 40px;
+	text-align: center;
 
 	h2 {
-		font-size: 2em;
+		font-family: $fontHeader;
+		color: $navy;
+		font-weight: bold;
+		font-size: 3em;
 	}
+}
 
-	form {
-		margin-top: 40px;
-	}
+#loginCon {
+	padding: 20px 5% 0 5%;
 
 	label {
+		color: $graydark;
+	}
+
+	#submitButton {
+		//width: 150px;
+		//height: 40px;
+		padding: 10px 40px 10px 40px;
+		background-color: $yellow;
+		font-family: $fontHeader;
+		font-size: 1em;
 		color: $white;
-		font-family: $fontBody;
-		font-size: .875em;
-		margin-top: 20px;
-		cursor: text;
+	}
+
+	#submitButton:hover {
+		background-color: $orange;
+		cursor: pointer;
 	}
 
 	input {
-		margin-top: 8px;
-	}
-
-	#radioText {
-		font-family: $fontBody;
-		font-size: .875em;
-		margin-left: 10px;
-		color: $white;
-	}
-
-	.inputForm {
-		border-radius: 50px;
-		border: none;
-		outline: none;
-		cursor: pointer;
-		box-shadow: 2px 2px 2px lighten($graydark, 25%);
-	}
-
-	.loginButton {
-		text-align: center;
-		padding: 10px;
-		width: 45%;
-		margin-right: 17px;
-		border-radius: 50px;
-		cursor: pointer;
-		box-shadow: 2px 2px 2px lighten($graydark, 35%);
-		@include trans(all, .15s);
-	}
-
-	#loginButton {
-		border: 1px solid $white;
-		color: $white;
-		background-color: rgba(0,0,0,0);
-	}
-
-	#signupButton {
-		border: 1px solid transparent;
-		color: $black;
-		margin-right: 0px;
+		border-radius: 100px;
 	}
 }
 
@@ -216,92 +189,7 @@ a:hover {
 /*Index Page*/
 
 
-#profileCon {
-	padding: 40px 7% 0 7%;
 
-	#profileImg {
-		font-size: 8em;
-		color: $navy;
-	}
-
-	#profileTitle {
-		padding-top: 60px;
-		font-family: $fontHeader;
-		text-align: right;
-
-		h3 {
-			font-size: 2.25em;
-			color: $yellow;
-			margin-bottom: 0;
-		}
-
-		h4 {
-			font-size: 1em;
-			color: $navy;
-
-		}
-	}
-}
-
-
-#createUserPage {
-	padding: 10% 7% 0 7%;
-
-	h2 {
-		color: $black;
-	}
-}
-#createUserCon {
-	@include gradX();
-	padding: 5% 5% 5% 5%;
-
-	label {
-		color: $white;
-		font-family: $fontBody;
-		font-size: .875em;
-		margin-top: 20px;
-		cursor: text;
-	}
-
-	input {
-		margin-top: 8px;
-	}
-
-	#radioText {
-		font-family: $fontBody;
-		font-size: .875em;
-		margin-left: 10px;
-		color: $white;
-	}
-
-	.inputForm {
-		border-radius: 50px;
-		border: none;
-		outline: none;
-		box-shadow: 2px 2px 2px lighten($graydark, 25%);
-	}
-
-	.loginButton {
-		text-align: center;
-		padding: 10px;
-		width: 45%;
-		margin-right: 17px;
-		border-radius: 50px;
-		cursor: pointer;
-		box-shadow: 2px 2px 2px lighten($graydark, 35%);
-		@include trans(all, .15s);
-	}
-
-	#submitButton {
-		border: 1px solid $white;
-		padding: 10px;
-		border-radius: 100px;
-		font-size: 1em;
-		color: $white;
-		cursor: pointer;
-		background-color: rgba(0,0,0,0);
-	}
-}
 
 
 
