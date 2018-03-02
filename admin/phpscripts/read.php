@@ -1,5 +1,5 @@
 <?php
-	
+
 	//Get all of something
 	function getAll($tbl) {
 		include('connect.php');
@@ -8,7 +8,7 @@
 		if($runAll){
 			return $runAll;
 		}else{
-			$error = "There was error accessing this information.  Please contact your admin.";
+			$error = "There was error accessing this information. Please contact your admin.";
 			return $error;
 		}
 		mysqli_close($link);
@@ -21,7 +21,7 @@
 		if($runSingle){
 			return $runSingle;
 		}else{
-			$error = "There was error accessing this information.  Please contact your admin.";
+			$error = "There was error accessing this information. Please contact your admin.";
 			return $error;
 		}
 		mysqli_close($link);
@@ -32,11 +32,11 @@
 		$queryFilter = "SELECT * FROM {$tbl}, {$tbl2}, {$tbl3} WHERE {$tbl}.{$col} = {$tbl3}.{$col} AND {$tbl2}.{$col2} = {$tbl3}.{$col2} AND {$tbl2}.{$col3} = '{$filter}'";
 		//echo $queryFilter;
 		$runFilter = mysqli_query($link, $queryFilter);
-		
+
 		if($runFilter){
 			return $runFilter;
 		}else{
-			$error = "There was error accessing this information.  Please contact your admin.";
+			$error = "There was error accessing this information. Please contact your admin.";
 			return $error;
 		}
 

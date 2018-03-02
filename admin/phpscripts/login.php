@@ -18,7 +18,12 @@
 				$updatestring = "UPDATE tbl_user SET user_ip = '$ip' WHERE user_id={$id}";
 				$updatequery = mysqli_query($link, $updatestring);
 			}
-			redirect_to("admin_index.php");
+
+			if($found_user['user_ip'] == 'no') {
+				redirect_to("admin_edituser.php");
+			}else{
+				redirect_to("admin_index.php");
+			}
 		}else{
 			$message = "Username and or password is incorrect.<br>Please ensure your caps lock key is turned off.";
 			return $message;

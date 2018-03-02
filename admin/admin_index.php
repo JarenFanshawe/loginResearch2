@@ -23,6 +23,7 @@
 		<ul id="adminNav">
 			<li><a href="admin_createuser.php">Create User</a></li>
 			<li><a href="admin_edituser.php">Edit User</a></li>
+			<li><a href="admin_deleteuser.php">Delete User</a></li>
 			<li><a href="phpscripts/caller.php?caller_id=logout">Sign Out</a></li>
 		</ul>
 	</section>
