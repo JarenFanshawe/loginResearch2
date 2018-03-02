@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 23, 2018 at 08:12 PM
+-- Generation Time: Mar 02, 2018 at 08:12 PM
 -- Server version: 5.6.38
 -- PHP Version: 7.2.1
 
@@ -1036,8 +1036,9 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_lvl`) VALUES
-(1, 'Elliot', 'elliotalderson123', 'password', 'ealderson123@gmail.com', '2018-02-23 11:43:25', '::1', 1),
-(3, 'connor', 'cclark123', 'password', 'connor@gmail.com', '2018-02-23 11:57:00', 'no', 2);
+(1, 'Elliot', 'elliotalderson321', 'password', 'ealderson123@gmail.com', '2018-02-23 11:43:25', '::1', 1),
+(4, 'connor', 'cclark123', 'conbone6699', 'connor@gmail.com', '2018-02-23 21:56:31', '::1', 2),
+(5, 'temp', 'temp', 'password', 'email@gmail.com', '2018-03-02 00:06:09', 'no', 2);
 
 --
 -- Indexes for dumped tables
@@ -1250,7 +1251,7 @@ ALTER TABLE `tbl_urating`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
